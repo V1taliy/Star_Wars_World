@@ -1,0 +1,33 @@
+body {
+  background: url("../img/sw1.png") no-repeat;
+  background-size: 100%;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+  width: 600px;
+  color: white;
+}
+.section {
+  padding: 25px 0;
+  margin-left: 80px;
+}
+#box1, #box2, #box3 {
+  background-color: #fff;
+  border: #ccc 1px solid;
+  padding: 20px;
+  display:block;
+  margin:100px;
+  width: 40%;
+  box-sizing: border-box;
+
+}
+p1, p2, p3 {
+  color: white;
+  position: absolute;
+  left: 120px;
+  bottom: 160px;
+
+}
+
