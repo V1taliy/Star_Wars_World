@@ -44,8 +44,7 @@ $('.next').click(function () {
     if (personId > 88) {
         alert("Sorry, its last hero, and you can't load next hero");
         personId--;
-        return false;
-    } else {
+        } else {
         getJSON(personId);
     }
 });
@@ -55,8 +54,7 @@ $('.previous').click(function () {
     if (personId < 1) {
         alert("Sorry, its first hero, and you can't load previous hero");
         personId++;
-        return false;
-    } else {
+      } else {
         getJSON(personId);
     }
 });
