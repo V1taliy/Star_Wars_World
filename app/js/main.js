@@ -32,8 +32,7 @@ function getJSON(personId) {
                 loadJsonHtml(data);
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                alert(JSON.stringify(jqXHR));
-                alert("AJAX error: " + textStatus + ' : ' + errorThrown);
+               alert(JSON.stringify(jqXHR , textStatus, errorThrown ));
             }
         }
     )
