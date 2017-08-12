@@ -19,8 +19,6 @@ function loadJsonHtml(getData) {
     document.getElementById("box2").innerHTML = getData.height;
     document.getElementById("box3").innerHTML = getData.mass;
 }
-
-
 function getJSON(personId) {
     $.ajax({
             url: 'https://swapi.co/api/people/' + personId + '/?format=json',
@@ -37,23 +35,17 @@ function getJSON(personId) {
         }
     )
 }
-
 $('.next').click(function () {
-    personId++;
-    if (personId > 88) {
-        alert("Sorry, its last hero, and you can't load next hero");
+    getJSON(++personId);
+    if(personId > 88) {
         personId--;
-        } else {
-        getJSON(personId);
     }
 });
 
 $('.previous').click(function () {
-    personId--;
+    getJSON(--personId);
     if (personId < 1) {
-        alert("Sorry, its first hero, and you can't load previous hero");
         personId++;
-      } else {
-        getJSON(personId);
     }
 });
+
